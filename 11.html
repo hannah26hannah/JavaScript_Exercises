@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Temperature Calculator
+    </title>
+    <style>
+      body {
+        margin: 120px;
+      }
+      input {
+        border: none;
+        border-bottom: 1px solid grey;
+        width: 60px;
+        padding: 0px 6px;
+        text-align: center;
+      }
+    </style>
+    <script type="text/javascript" src="11.js"></script>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="cel" oninput="cvt1();" />°C is :
+      <span id="result1"></span><br />
+      <input type="text" id="fa" oninput="cvt2();" />°F is :
+      <span id="result2"></span>
+    </form>
+  </body>
+</html>
