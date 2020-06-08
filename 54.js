@@ -2,10 +2,11 @@
 
 function getVowels(str) {
     const m = str.match(/[aeiou]/gi);
+    console.log(m) // ["a", "a", "i", "a"]
     return m === null ? 0 : m.length;
 }
 
-console.log(getVowels("Hannah is back!"))
+console.log(getVowels("Hannah is back!")) // 4
 
 // match() 메서드는 문자열이 정규식과 매치되는 부분을 검색. 
 // 문법 str.match(regexp)
@@ -16,4 +17,6 @@ console.log(getVowels("Hannah is back!"))
 // 정규식에 g 플래그가 포함되어 있으면, 일치는 객체가 아닌 일치하는 하위 문자열을 포함하는 Array를 반환. 캡쳐된 그룹은 반환되지 않음. 일치하는 것이 없으면 null이 반환됨. 
 
 // match() 사용하기 예제. MDN 출처
+
+
 
