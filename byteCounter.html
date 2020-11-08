@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byte Counter</title>
+</head>
+<body>
+    <p>바이트 계산하기</p>
+    <input id="title" type="text" placeholder="write something here">
+    <div>byteLength : <span id="warning">0</span></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    /* 문자열의 바이트 수 리턴
+        @returns { Number }
+    */
+    String.prototype.byteLength = function() {
+        let l = 0;
+
+        for (let i = 0; i < this.length; i++) {
+            var c = encodeURIComponent(this.charAt(i));
+
+            if(c.length == 1) l++;
+            else if(c.indexOf("%u") != -1) l += 2;
+            else if(c.indexOf("%") != -1) l += c.length/3;
+        }
+
+        return l;
+
+    }
+
+    $(document).on("keyup", "input", function(e) {
+        // if(e.which == 13) {
+            var inputVal = $(this).val();
+            var bl = inputVal.byteLength();
+            const warning = document.getElementById('warning');
+            warning.textContent = bl;
+        // }
+    })
+</script>
+</html>
