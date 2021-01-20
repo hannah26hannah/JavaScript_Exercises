@@ -67,5 +67,3 @@ function upgradeUser(user) {
     }
     // long upgrade logic... 
 }
-
-// 1. Function expression 
