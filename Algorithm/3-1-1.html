@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>실습3-1-1 나눗셈을 뺄셈으로 계산한다(몫과 나머지)</title>
+		<meta charset="utf-8" />
+	</head> 
+	<body>
+		<form name="inputForm">
+			<div>
+				a의 값＝<input name="a" type="text" size="10" /></br>
+				b의 값＝<input name="b" type="text" size="10" /></br>
+				<input type="button" value="계산하기" onClick="doDivide()"/>
+			</div>
+		</form>
+		<form name="outputForm">
+			<div>
+				계산결과→<input name="result" type="text" size="30"/>
+			</div>
+		</form>
+		<script>
+			function doDivide() {
+				const inputForm = document.forms.inputForm;
+				const outputForm = document.forms.outputForm;
+				const a = parseInt(inputForm.a.value);
+				const b = parseInt(inputForm.b.value);
+				const result = divide(a,b);
+				if (result == null) {
+					outputForm.result.value = "0으로 나눌 수는 없습니다!";				
+				} else {
+					outputForm.result.value = `${a} ÷ ${b} = ${result[0]} ... ${result[1]}`
+				}
+			}
+			// 함수 divide(a, b)
+			// 		입력： a 피제수, b 제수
+			// 		출력： [몫, 나머지]
+			function divide(a, b) {
+                var q = 0;          // 몫을 저장하는 변수 q에 0을 대입한다
+                var r = a;          // 나머지를 저장하는 r에 a를 대입한다
+                if (b == 0) {       // b가 0이면
+                    return null;    // 결과를 null로 종료한다
+                }   
+                while (r >= b) {    // r≧b인 동안, 다음 처리를 반복한다
+                    r = r - b;      // r에 r-b를 대입한다
+                    q = q + 1;      // q에 1을 더한다
+                }
+                return [q,r];       // 몫 q, 나머지 r을 결과로 반환하고 종료한다
+			}
+
+		</script>	
+	</body>
+</html>

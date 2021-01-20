@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>실습3-1-2 나눗셈을 뺄셈으로 계산한다(소수점이하)</title>
+		<meta charset="utf-8" />
+	</head> 
+	<body>
+		<form name="inputForm">
+			<div>
+				a의 값＝<input name="a" type="text" size="10" /></br>
+				b의 값＝<input name="b" type="text" size="10" /></br>
+				<input type="button" value="계산하기" onClick="doDivide()"/>
+			</div>
+		</form>
+		<form name="outputForm">
+			<div>
+				계산결과→<input name="result" type="text" size="30"/>
+			</div>
+		</form>
+		<script>
+			function doDivide() {
+				const inputForm = document.forms.inputForm;
+				const outputForm = document.forms.outputForm;
+				const a = parseInt(inputForm.a.value);
+				const b = parseInt(inputForm.b.value);
+				const result = divide(a,b);
+				if (result == null) {
+					outputForm.result.value = "0으로 나눌 수는 없습니다!";				
+				} else {
+					outputForm.result.value = `${a} ÷ ${b} = ${result[0]}.${(Array(result[2]).join('0') + result[1]).slice(-result[2])}`;				
+				}
+			}
+
+			function divide(a, b) {
+				let q = 0;				  // 몫을 저장하는 변수 q에 0을 대입한다
+				let r = a;				  // 나머지를 저장하는 r에 a를 대입한다
+				if (b == 0) {			  // b가 0이면
+					return null;		  // null을 결과로 반환하고 종료한다
+				}
+				while (r >= b) {	  // r≧b인 동안, 다음 처리를 반복한다
+					r = r - b;			  // r에 r-b를 대입
+					q = q + 1;			  // q에 1을 더한다
+				}
+				let f = 0;		      // 소수점 이하의 값을 저장하는 변수 f에 0을 대입한다
+				let n = 0;				  // 소수점 이하의 자릿수를 저장하는 변수 n에 0을 대입한다
+				while (r > 0) {		  // r＞0인 동안, 다음 처리를 반복한다
+					r = r * 10;			  // r을 10배 한다
+					f = f * 10;			  // f를 10배 한다
+					while (r >= b) {  // r≧b인 동안, 다음 처리를 반복한다
+						r = r - b;		  // r에 r-b를 대입한다
+						f = f + 1;		  // f에 1을 더한다
+					}
+					n = n + 1;			  // n에 1을 더한다
+				}
+				return [q,f,n];			// 몫의 정수 부분 q,몫의 소수 부분 f, 소수 부분의 자릿수 n을 결과로 반환하고 종료한다
+			}
+		</script>	
+	</body>
+</html>

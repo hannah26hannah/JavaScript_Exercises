@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>실습 4-1-1 문자열 검색</title>
+		<meta charset="utf-8" />
+	</head> 
+	<body>
+		<form name="inputForm">
+			검색 대상 문자열 : <input name="text" type="text" size="50" />
+			<br>
+			검색 문자열(키워드) : <input name="pattern" type="text" size="50" />
+			<br>
+			<input type="button" value="검색하기" onClick="doSearch()"/>
+		</form>
+		<script>
+			function doSearch() {
+				const inputForm = document.forms.inputForm;
+				let text = inputForm.text.value;
+				let pattern = inputForm.pattern.value;
+				// const result = searchString(text, pattern);
+				const result = doAnotherSearch(text, pattern);
+				if (result >= 0) {
+					alert(`${result + 1}번째 문자열에서 찾았습니다.`);
+				} else {
+					alert("찾을 수 없습니다.");
+				}
+			}
+			function searchString(text, pattern) {			
+				return text.indexOf(pattern);
+			}
+			function doAnotherSearch(text, pattern) {
+				let position_of_text = 0;
+				while (position_of_text <= text.length - pattern.length) {
+					// 패턴이 텍스트의 길이를 넘지 않는 동안
+					let position_of_pattern = 0; // 패턴의 맨 앞 위치를 가리키는 변수
+					
+					while (position_of_pattern < pattern.length) { // 패턴의 길이를 넘지 않는 동안
+						if (text[position_of_text + position_of_pattern] != pattern[[position_of_pattern]]) // 텍스트와 패턴 문자가 일치하지 않으면
+						break;
+
+						position_of_pattern++; // 패턴 비교를 위해 오른쪽으로 한 칸 옮긴다.
+					}
+
+					if (position_of_pattern == pattern.length) { // 패턴의 모든 문자가 텍스트와 일치하면
+						return position_of_text; // 텍스트와 일치한 시작 위치를 결과로 반환하고 종료
+					}
+					position_of_text++; // 텍스트의 위치를 오른쪽으로 1칸 옮긴다. 
+				}
+				return -1; 
+			}
+		</script>	
+	</body>
+</html>
