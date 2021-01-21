@@ -39,18 +39,24 @@ delete hannah.hasJob;
 console.log(hannah.hasJob); // undefined cuz it doens't contain this property any more.
 
 // 2. Computed properties
-// key should be always string
-console.log(hannah.name);
-console.log(hannah['name']); // I didn't know this could be possible
-console.log(hannah[name]); // undefined
 
-hannah['hasJob'] = true;
+
+// 2-1 get
+console.log(hannah.name);
+console.log(hannah['name']);
+console.log(hannah[name]); // undefined 
+// key should be always string when setting or getting
 console.log(hannah.hasJob);
 
 function printValue(obj, key) {
     console.log(obj[key]);
 };
-printValue(hannah, 'age');
+printValue(hannah, 'age'); 
+
+// 2-2 set
+hannah['hasJob'] = true;
+// or hannah.hasJob = ture; 가능
+
 
 // 3. Property value shorthand
 
@@ -155,3 +161,24 @@ console.log(user4);
  console.log(mixed.size); // 'big'
 
 
+// comparision with Python 
+/*
+
+sample_dictionary = {"A": 1, "B": 2, "C": 3}
+for key in sample_dictionary.keys():
+    print(key)
+
+    in Python code for iterating Map's key
+
+
+const sample_dictionary = { A: 1, B: 2, C: 3 }; // ""을 붙이지 않아도 속성이므로 상관없다.
+
+Object.keys(sample_dictinoary).forEach(key => {
+console.log(key);
+
+    in JS code for
+
+해당 객체의 method가 아닌 Object.keys()를 사용해 Key를 받아온다. 파이썬에서 하던 대로 JS에서 선언하면, 해당 변수를 Dictionary나 Map으로 취급하지 않고, Object로 취급하기 때문이다. 따라서 하나의 Key가 하나의 속성으로 취급받는 것이고, 아래처럼 Object 생성과 호출, 설정이 가능하다.
+
+
+*/

@@ -77,10 +77,12 @@ function check() {
 console.log(!value1);
 
 // 7. Equality
+
 const stringFive = '5';
 const numberFive = 5;
 
-// == loose equality, with type conversion
+// == loose equality, with type conversion 따라서 업무에서 자신만의 코드를 쓰는 것이 아니라면 ==를 쓸 때 어떤 형변환이 이루어지는지 모두 고려 해야 한다. 그러므로 주로 ===를 쓰도록 권장함 (null check은 예외)
+
 console.log(stringFive == numberFive);
 console.log(stringFive != numberFive);
 
@@ -99,13 +101,22 @@ console.log(hannah1 === hannah3);
 
 // equality - puzzler
 console.log(0 == false); // true
-console.log(0 === false);
+console.log(0 === false); // false
 console.log(0 == false); // true
-console.log(0 === false); // true
 console.log('' == false); // true
 console.log('' === false); // false
-console.log(null == undefined); // typeof null : object이므로, false
-console.log(null === undefined); // true.. ? 
+console.log(null == undefined); // true
+console.log(null === undefined); // false
+console.log(null == 1); // false
+console.log(null == 'hello'); // false
+console.log(null == false); // false
+
+console.log(undefined == 1); // false
+console.log(undefined == 'hello'); // false
+console.log(undefined == false); // false
+
+// == 연산자는 한 쪽 피연산자에 null 혹은 undefined가 오면, 다른 쪽 피연산자에 null 혹은 undefined일 경우에만 true를 반환, 다른 모든 경우에는 false를 반환한다. null check을 위해서는 == 를 사용하고, 다른 모든 경우 === 연산자를 사용 권장
+
 
 // 8. Conditional operators: if
 // if, else if, else
