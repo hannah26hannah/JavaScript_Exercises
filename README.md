@@ -90,8 +90,11 @@ Basic JavaScript Examples
 
 6. course 6
 
-- `array_quiz.js`, `array_useful.js`, `array-api.js`, `array.js`
+- `array_quiz.js`, `array-api.js`
+- `array_useful.js` (find, map, some, every, reduce, reduceRight, filter)
+- `array.js` (Declaration, Index position, length property, Sparce Array, forEach, for of, add and remove, indexOf, lastIndexOf, array-like object, join)
 - 📂 Array : `splice_ex.js` (slice, splice, join, filter 예제)
+- 👀 [참고한 블로그 글](https://jongmin92.github.io/2017/01/28/JavaScript/complete-guide-to-javascript-chapter-7/)
 
 7. course 7
 
