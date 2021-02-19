@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>import meta</title>
+</head>
+<body>
+    <!--- 필요한 모듈(anlytics.js)의 로드가 끝나면 문서나 다른 <script>가 로드되길 기다리지 않고 바로 실행된다.-->
+        <script async type="module">
+            import {counter} from "./analytics.js";
+            counter.count();
+        </script>
+</body>
+</html>
