@@ -1,0 +1,40 @@
+<!-- Form and control 2 -->
+
+<!-- an element can be focusable when it's using HTML-attribute tabindex -->
+
+
+<!doctype html>
+<body>
+Click the first item and press Tab. Keep track of the order. Please not that subsequent Tabs can move the focus out of the iframe in the example.
+<ul>
+    <li tabindex="1">One</li>
+    <li tabindex="0">Zero</li>
+    <li tabindex="2">Two</li>
+    <li tabindex="-1">Minus one</li>
+</ul>
+<script>
+  input.onblur = function() {
+    if (!this.value.includes('@')) { // not email
+      this.classList.add("error");
+      input.focus();
+    } else {
+      this.classList.remove("error");
+    }
+  };
+</script>
+<style>
+    li {
+        cursor: pointer;
+    }
+    :focus {
+        outline: 1px dashed green;
+    }
+</style>
+</body>
+
+<!-- one -> two -> zero -> Done! 
+Also normally, <li> can't be automatically focused. 
+tabindex enables it.
+
+for javascript use this : elem.tabIndex property
+-->

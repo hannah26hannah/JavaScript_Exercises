@@ -1,31 +1,7 @@
 # JavaScript Exercises
-
-Basic JavaScript Examples
+Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 
 ## 📖 Index
-
-### 📂 JavaScript-Excercises, Practice, Solution
-
-[Reference](https://www.w3resource.com/javascript-exercises/)
-
-1. Write a JavaScript program to display the current day and time in the following format. `setInterval`, `querySelector`, `date`
-
-<hr>
-
-1. `30s_01.js` : Write a JavaScript program to compare two objects to determine if the first one contains equivalent property values to the second one. `Object.keys`, `hasOwnProperty()`, `every()`
-
-### 📂 Algorithm
-
-1.  나눗셈을 뺄셈으로 계산하는 알고리즘 (3-1-1.html)
-2.  나눗셈을 뺄셈으로 계산하는 알고리즘 (소수점 이하 계산 허용) (3-1-2.html)
-3.  문자열 검색 알고리즘의 두 가지 방법 (4-1-1.html)
-
-### 📂 Accessibility
-
-웹 접근성에 관한 자바스크립트 및 HTML 예제
-
-1.  탭 인덱스(tabindex) : tabindex.html
-
 ### 📂 Moden JS ES6+
 
 👀 Main Reference : [드림코딩 by 엘리](https://www.youtube.com/channel/UC_4u-bXaba7yrRz_6x6kb_w)
@@ -103,3 +79,42 @@ Basic JavaScript Examples
 8. course 8
 
 - async await promise
+
+9. course 9 : <i>Advanced working with functions</i>
+
+- Rest parameters and spread syntax `rest_parameter.js`, `spread_syntax.js`
+- "argument" variable `arguments_variable.js`
+
+10. course 10 : Module System
+
+11. course 11 : Browser : *How to handle page in a browser*
+- Document `doc.js`
+- Introduction to Events
+- UI Events
+- Forms and Controls `form_and_control` (tabindex, focus/blur, focusin/focusout)
+- Document and Resource Loading
+- Miscellaneous
+
+### 📂 JavaScript-Excercises, Practice, Solution
+
+👀 Reference [w3resource](https://www.w3resource.com/javascript-exercises/)
+
+1. Write a JavaScript program to display the current day and time in the following format. `setInterval`, `querySelector`, `date`
+
+<hr>
+
+1. `30s_01.js` : Write a JavaScript program to compare two objects to determine if the first one contains equivalent property values to the second one. `Object.keys`, `hasOwnProperty()`, `every()`
+
+
+
+### 📂 Accessibility
+
+웹 접근성에 관한 자바스크립트 및 HTML 예제
+
+1.  탭 인덱스(tabindex) : tabindex.html
+
+### 📂 Algorithm
+
+1.  나눗셈을 뺄셈으로 계산하는 알고리즘 (3-1-1.html)
+2.  나눗셈을 뺄셈으로 계산하는 알고리즘 (소수점 이하 계산 허용) (3-1-2.html)
+3.  문자열 검색 알고리즘의 두 가지 방법 (4-1-1.html)

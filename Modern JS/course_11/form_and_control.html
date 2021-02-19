@@ -1,0 +1,64 @@
+<!-- Forms and controls -->
+
+<!-- Focusing: focus/blur -->
+
+<!-- An Element receives the focus when user either clicks on it or uses the Tab key on the keyboard.
+'autofocus' HTML attributes that puts the focus onto an element by default when a page loads and other means of getting the focus
+
+blue('losing the focus') generally means 'the data has been entered' -->
+
+<style>
+    .invalid { border-color: red; }
+    #error { color: red }
+</style>
+ 
+Your email please : <input type='email' id='input'>
+<div id='error'></div>
+
+<script>
+    input.onblur = () => {
+        if (!input.value.includes('@')) { // it's not an email 
+            input.classList.add('invalid');
+            error.innerHTML = 'Please enter a correct email.'
+        }
+    }
+    input.onfocus = () => {
+        if (this.classList.contains('invalid')) {
+            this.classList.remove('invalid');
+            input.innerHTML = '';
+        }
+    }
+</script>
+
+<!-- Modern Browser also gives required, pattern attributes for validation -->
+
+
+<!doctype html>
+<body>
+<style>
+  .error {
+    background: red;
+  }
+</style>
+
+Your email please: <input type="email" id="input">
+<input type="text" style="width:220px" placeholder="make email invalid and try to focus here">
+
+<script>
+  input.onblur = function() {
+    if (!this.value.includes('@')) { // not email
+      this.classList.add("error");
+      input.focus();
+    } else {
+      this.classList.remove("error");
+    }
+  };
+</script>
+</body>
+
+<!-- * FF occurs bug -->
+<!-- 
+sometimes JavaScript can also occur focus/blue events by itself for example via alerts. 
+also when an element is removed from DOM, it causes the focus loss. -->
+
+

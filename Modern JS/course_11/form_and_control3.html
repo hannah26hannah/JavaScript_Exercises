@@ -1,0 +1,43 @@
+<!-- Delegation focusin/focusout -->
+
+<!DOCTYPE html>
+<form onfocus="this.className='focused'">
+    <input type="text" name='name' value='name'>
+    <input type="text" name='surname' value='surname'>
+</form>
+<style> .focused { outline: 1px solid red;} </style>
+
+
+<!-- focus and blur do not bubble, so the example above doesn't to anything. -->
+
+
+
+<!DOCTYPE html>
+<form id='form'>
+    <input type="text" name='name' value='name'>
+    <input type="text" name='surname' value='surname'>
+</form>
+<style> .focused { outline: 1px solid blue;} </style>
+<script>
+    form.addEventListener('focus', () => form.classList.add('focused'), true)
+    form.addEventListener('blur', () => form.classList.remove('focused'), true)
+</script>
+
+<!-- focus/blur, however, propagates down on the capturing phase. 
+    This works on chrome and FF, either -->
+
+
+    <!DOCTYPE html>
+    <form id='form'>
+        <input type="text" name='name' value='name'>
+        <input type="text" name='surname' value='surname'>
+    </form>
+    <style> .focused { outline: 1px solid green;} </style>
+    <script>
+        form.addEventListener('focusin', () => form.classList.add('focused'))
+        form.addEventListener('focusout', () => form.classList.remove('focused'))
+    </script>
+    
+<!-- focus/blur can't bubble, but focusin/focusout can bubble, but do the same work with them. -->
+
+<!-- TIP: The current focused element is available as document.activeElement -->
