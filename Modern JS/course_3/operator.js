@@ -184,4 +184,22 @@ for (let i = 0; i < 10; i++) {
         console.log(`i: ${i}, j: ${j}`);
     }
 }
-// cpu에 좋지않아. 되도록 피하는 게 좋겠지. 
+// for performance, use continue and break
+// continue directive is a 'lighter version' of break. it doesn't stop the whole loop but it stops the current iteration and forces the loop to start a new one. (if the condition allows)
+
+for (let i = 0; i < 10; i++) {
+    if (i % 2 === 0) continue;
+    console.log(i); // 1, 3, 5, 7, 9
+}
+
+/*
+for (let i = 0; i < 10; i++) {
+  if (i % 2) {
+    console.log(i)
+  }
+}
+
+This example is the identical to the above but it's better to avoid nesting in this case
+*/
+
+// TIP : In a ternary operator, continue/break aren't allowed.

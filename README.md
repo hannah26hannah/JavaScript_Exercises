@@ -25,7 +25,7 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 - Equality (`==`, `===`)
 - Conditional Operators
 - Ternary operator
-- Loops
+- Loops (`break`, `continue` operator)
 
 4. course 4
 
