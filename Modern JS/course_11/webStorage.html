@@ -1,0 +1,39 @@
+<!-- Autosave a form field 
+
+1. Create a textarea filed that 'autosaves' its value on every change.
+so if the user accidentally closes the page, and opens it again, the user will find their unfinished input at place.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autosave a form field</title>
+</head>
+<body>
+    <textarea name="autosave" id="autosave" cols="30" rows="10" placeholder="Write here"></textarea>
+    <button value="Clear">Clear</button>
+<script type="text/javascript">
+
+const area = document.querySelector('textarea');
+area.addEventListener('keyup', (e) => {
+    localStorage.setItem('unfinished', e.target.value);
+})
+// keyup 대신 oninput을 쓸 수도 있다. 
+
+// area.oninput = () => {
+//     localStorage.setItem('unfinished', area.value);
+// }
+
+const data = localStorage.getItem('unfinished');
+if (data) area.value = data;
+
+const btn = document.querySelector('button');
+btn.addEventListener('click', () => {
+    localStorage.removeItem('unfinished');
+    area.value = '';
+})
+
+</script>
+</body>
+</html>
