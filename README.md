@@ -13,9 +13,7 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 - bigInt
 - template literal
 
-3. course 3
-
-`operator.js`
+3. course 3 - `operator.js`
 
 - String concatenation
 - Numeric operators
@@ -26,10 +24,9 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 - Conditional Operators
 - Ternary operator
 - Loops (`break`, `continue` operator)
+- nullish coalescing operator `nullish_coalescing_op.js`
 
-4. course 4
-
-`function.js`
+4. course 4 - `function.js`
 
 - function
 - parameters
@@ -43,6 +40,14 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 - named function
 - arrow function
 - IIFE (Immediately Invoked Function Expression)
+
+`functionDeclaration.js`
+- local variable, outer variable
+- parameter
+- default value
+- return value
+- function naming
+
 
 5. course 5
 
