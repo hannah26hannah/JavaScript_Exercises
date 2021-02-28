@@ -93,7 +93,7 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 10. course 10 : Module System
 
 11. course 11 : Browser and data storage in browser : *How to handle page in a browser*
-- Document `doc.js`
+- Document `browser_events.md`
 - Introduction to Events
 - UI Events
 - Forms and Controls `form_and_control` (tabindex, focus/blur, focusin/focusout)
@@ -102,6 +102,9 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 - Web storage `webStorage.html`
 [브라우저에 데이터 저장하기 : WebStorage(localStorage와 SessionStorage) & Cookie #1](https://uiyoji-journal.tistory.com/71)
 [브라우저에 데이터 저장하기 : WebStorage(localStorage와 SessionStorage) & Cookie #2](https://uiyoji-journal.tistory.com/72)
+
+12. course 12 : Data Types (More Data Structure and more in-depth study of the types)
+- 10. destructuring assignment
 
 ### 📂 JavaScript-Excercises, Practice, Solution
 
