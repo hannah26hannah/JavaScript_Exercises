@@ -100,11 +100,11 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 - Document and Resource Loading
 - Miscellaneous
 - Web storage `webStorage.html`
-[브라우저에 데이터 저장하기 : WebStorage(localStorage와 SessionStorage) & Cookie #1](https://uiyoji-journal.tistory.com/71)
-[브라우저에 데이터 저장하기 : WebStorage(localStorage와 SessionStorage) & Cookie #2](https://uiyoji-journal.tistory.com/72)
+    - [브라우저에 데이터 저장하기 : WebStorage(localStorage와 SessionStorage) & Cookie #1](https://uiyoji-journal.tistory.com/71)
+    - [브라우저에 데이터 저장하기 : WebStorage(localStorage와 SessionStorage) & Cookie #2](https://uiyoji-journal.tistory.com/72)
 
 12. course 12 : Data Types (More Data Structure and more in-depth study of the types)
-- 10. destructuring assignment
+- 10_destructuring assignment
 
 ### 📂 JavaScript-Excercises, Practice, Solution
 
@@ -122,7 +122,8 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 
 웹 접근성에 관한 자바스크립트 및 HTML 예제
 
-1.  탭 인덱스(tabindex) : tabindex.html
+1. 탭 인덱스(tabindex) : tabindex.html
+2. TODO: alt 쓰기 
 
 ### 📂 Algorithm
 
