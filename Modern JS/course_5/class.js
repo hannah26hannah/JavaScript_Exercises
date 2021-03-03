@@ -15,14 +15,17 @@ class Person {
 }
 
 const hannah = new Person('hannah', 27);
+// constructor() method is called automatically by new, so we can initialize the object there.
+
 console.log(hannah.name);
 console.log(hannah.age);
 hannah.speak();
 
-// 2. Getter and Setters;
+// 2. Getter and Setters
 
 class User {
     constructor(firstName, lastName, age) {
+        // invokes the setter
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -38,21 +41,34 @@ class User {
         
         this._age = value < 0 ? 0 : value;
     }
+    // top : The underscore could be anything. It is called a backing prefix. If you don't distinguish name in the get or set then you get an infinite loop of this property calling itself.
 }
 
 const user1 = new User('Steve', 'Job', '-1'); 
-console.log(user1.age);
+console.log(user1.age); // 0
+console.log(user1.firstName, user1.lastName); //Steve Job
 
 // 3. Fields (Public, private)
-// too soon!
+// too soon! Because old browsers may need a polyfill
+
 
 class Experiment {
-    publicField = 2;
+    publicField = 2; // just write '=' in the declaration. 
     #privateField = 0;
 }
+
+// The important difference of class fields is that they are set on individual objects, not User.prototype
+
 const experiment = new Experiment();
-console.log(experiment.publicField);
-console.log(experiment.privateField); 
+console.log(experiment.publicField); // 2
+console.log(experiment.privateField);  // undefined
+console.log(experiment.prototype.publicField) // Cannot read property 'publicField' of undefined
+
+class User {
+    name = console.log("Name?", "Hannah");
+}
+let user = new User();
+user.name; // "Name? Hannah"
 
 
 // 4. Static properties and methods 
