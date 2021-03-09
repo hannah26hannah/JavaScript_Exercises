@@ -49,15 +49,14 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 - function naming
 
 
-5. course 5
-
-`class.js`
-
+5. course 5 :
+- What is Class `class.md`, `class.js`
 - class declaration
 - Getter and Setter
 - Fields (Public, Private) 👀
 - Static properties and methods 👀
-- Inheritance
+- Inheritance `class_inheritance.js`
+    - `class_task.js`, `class_task2.js`, `class_task3` 
 - instanceof operator
 
 `object.js` : 👀 [참고한 블로그 글](https://class101.dev/ko/blog/2019/07/16/lama)
@@ -96,15 +95,18 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 - Document `browser_events.md`
 - Introduction to Events
 - UI Events
+    - `arguments.callee`의 대안
 - Forms and Controls `form_and_control` (tabindex, focus/blur, focusin/focusout)
 - Document and Resource Loading
 - Miscellaneous
 - Web storage `webStorage.html`
     - [브라우저에 데이터 저장하기 : WebStorage(localStorage와 SessionStorage) & Cookie #1](https://uiyoji-journal.tistory.com/71)
     - [브라우저에 데이터 저장하기 : WebStorage(localStorage와 SessionStorage) & Cookie #2](https://uiyoji-journal.tistory.com/72)
-
+- History, Hash : `vanilla_routing.md`
 12. course 12 : Data Types (More Data Structure and more in-depth study of the types)
 - 10_destructuring assignment
+
+13. course 13 : Error Handling
 
 ### 📂 JavaScript-Excercises, Practice, Solution
 
@@ -122,8 +124,8 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 
 웹 접근성에 관한 자바스크립트 및 HTML 예제
 
-1. 탭 인덱스(tabindex) : tabindex.html
-2. TODO: alt 쓰기 
+1. 탭 인덱스(tabindex) | tabindex.html
+2. 대체 텍스트 | [Alt Text](./Accessibility/alt.md) 
 
 ### 📂 Algorithm
 
