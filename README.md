@@ -1,7 +1,9 @@
 # JavaScript Exercises
+
 Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 
 ## 📖 Index
+
 ### 📂 Moden JS ES6+
 
 👀 Main Reference : [드림코딩 by 엘리](https://www.youtube.com/channel/UC_4u-bXaba7yrRz_6x6kb_w)
@@ -42,22 +44,25 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 - IIFE (Immediately Invoked Function Expression)
 
 `functionDeclaration.js`
+
 - local variable, outer variable
 - parameter
 - default value
 - return value
 - function naming
 
-
 5. course 5 :
+
 - What is Class `class.md`, `class.js`
 - class declaration
 - Getter and Setter
 - Fields (Public, Private) 👀
 - Static properties and methods 👀
 - Inheritance `class_inheritance.js`
-    - `class_task.js`, `class_task2.js`, `class_task3` 
+  - `class_task.js`, `class_task2.js`, `class_task3`
 - instanceof operator
+
+6. course 6
 
 `object.js` : 👀 [참고한 블로그 글](https://class101.dev/ko/blog/2019/07/16/lama)
 
@@ -68,13 +73,24 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 - for .. in, for.. of
 - cloning
 
-6. course 6
+`🎯 Modern_tutorial_Objects: the basics`
+
+1. objects
+2. Objects reference and copying
+3. Garbage collection
+4. Object methods, 'this'
+5. Constructor, operator 'new'
+6. Optional Chaining : `?`
+7. Symbol type
+   `7_Symbol_Type`
+8. Object to primitive conversion
+
+`Array` : 👀 [참고한 블로그 글](https://jongmin92.github.io/2017/01/28/JavaScript/complete-guide-to-javascript-chapter-7/)
 
 - `array_quiz.js`, `array-api.js`
 - `array_useful.js` (find, map, some, every, reduce, reduceRight, filter)
 - `array.js` (Declaration, Index position, length property, Sparce Array, forEach, for of, add and remove, indexOf, lastIndexOf, array-like object, join)
 - 📂 Array : `splice_ex.js` (slice, splice, join, filter 예제)
-- 👀 [참고한 블로그 글](https://jongmin92.github.io/2017/01/28/JavaScript/complete-guide-to-javascript-chapter-7/)
 
 7. course 7
 
@@ -91,20 +107,36 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 
 10. course 10 : Module System
 
-11. course 11 : Browser and data storage in browser : *How to handle page in a browser*
+11. course 11 : Browser and data storage in browser : _How to handle page in a browser_
+
 - Document `browser_events.md`
 - Introduction to Events
 - UI Events
-    - `arguments.callee`의 대안
+  - `arguments.callee`의 대안
 - Forms and Controls `form_and_control` (tabindex, focus/blur, focusin/focusout)
 - Document and Resource Loading
 - Miscellaneous
 - Web storage `webStorage.html`
-    - [브라우저에 데이터 저장하기 : WebStorage(localStorage와 SessionStorage) & Cookie #1](https://uiyoji-journal.tistory.com/71)
-    - [브라우저에 데이터 저장하기 : WebStorage(localStorage와 SessionStorage) & Cookie #2](https://uiyoji-journal.tistory.com/72)
+  - [브라우저에 데이터 저장하기 : WebStorage(localStorage와 SessionStorage) & Cookie #1](https://uiyoji-journal.tistory.com/71)
+  - [브라우저에 데이터 저장하기 : WebStorage(localStorage와 SessionStorage) & Cookie #2](https://uiyoji-journal.tistory.com/72)
 - History, Hash : `vanilla_routing.md`
-12. course 12 : Data Types (More Data Structure and more in-depth study of the types)
-- 10_destructuring assignment
+
+12. course 12 :
+    `🎯 Modern_tutorial_Data types : More Data Structure and more in-depth study of the types`
+
+    1. Methods of primitives
+    2. Numbers
+    3. Strings
+    4. Arrays
+    5. Array methods
+    6. Iterables
+    7. Map and Set
+    8. WeakMap and WeakSet
+    9. Object.keys, values, entries
+    10. Destructuring assignment
+        `10_destructuring assignment`
+    11. Date and time
+    12. JSON methods, toJSON
 
 13. course 13 : Error Handling
 
@@ -118,14 +150,12 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 
 1. `30s_01.js` : Write a JavaScript program to compare two objects to determine if the first one contains equivalent property values to the second one. `Object.keys`, `hasOwnProperty()`, `every()`
 
-
-
 ### 📂 Accessibility
 
 웹 접근성에 관한 자바스크립트 및 HTML 예제
 
 1. 탭 인덱스(tabindex) | tabindex.html
-2. 대체 텍스트 | [Alt Text](./Accessibility/alt.md) 
+2. 대체 텍스트 | [Alt Text](./Accessibility/alt.md)
 
 ### 📂 Algorithm
 
