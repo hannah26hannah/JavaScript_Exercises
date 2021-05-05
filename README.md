@@ -34,7 +34,9 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 - parameters
 - default parameters
 - Rest parameters, for .. of, forEach
-- local scope
+- Local scope
+- Decorators 
+- `call()/apply()` 
 
 `functionExpression.js`
 
