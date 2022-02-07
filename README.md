@@ -6,8 +6,9 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 
 ### 📂 Moden JS ES6+
 
-👀 Main Reference : [드림코딩 by 엘리](https://www.youtube.com/channel/UC_4u-bXaba7yrRz_6x6kb_w)
-👀 Reference [Modern JavaScript Tutorial](https://ko.javascript.info/)
+- 👀 Main Reference : [드림코딩 by 엘리](https://www.youtube.com/channel/UC_4u-bXaba7yrRz_6x6kb_w)
+
+- 👀 Reference [Modern JavaScript Tutorial](https://ko.javascript.info/)
 
 1. course 1 : `'use strict'`
 2. course 2
@@ -21,7 +22,7 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 - Numeric operators
 - Increment and decrement operators
 - Assignment operators
-- Logical operators
+- Logical OR operators `nullish_coalescing_op.js`
 - Equality (`==`, `===`)
 - Conditional Operators
 - Ternary operator
@@ -35,8 +36,8 @@ Basic JavaScript Examples & ES6+ Theory for Modern Web Development
 - default parameters
 - Rest parameters, for .. of, forEach
 - Local scope
-- Decorators 
-- `call()/apply()` 
+- Decorators
+- `call()/apply()`
 
 `functionExpression.js`
 
